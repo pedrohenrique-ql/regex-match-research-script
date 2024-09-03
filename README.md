@@ -8,7 +8,7 @@ O participante lida com um sistema de rastreamento de produtos que usa códigos 
 
 ### 1 - Criação de uma regex
 
-O participante deve criar uma regex para detectar todos os **códigos dos produtos** e seus **nomes** usando o arquivo de teste da extensão. O padrão é formado pela **região** (P, Q ou R), seguida de um **hífen** e a **identificação** do produto que é composta por **3 números**, um **divisor** (hífen, barra ou ponto), e **3 letras maiúsculas**. Após o código, há um espaço e o nome do produto.
+O participante deve criar uma regex para detectar todos os **códigos dos produtos** e seus **nomes** usando o arquivo de teste da extensão. O padrão é formado pela **região** (P, Q ou R), seguida de um **hífen**, seguida da **identificação** do produto, que é composta por **3 números**, um **divisor** (hífen, barra ou ponto), e **3 letras maiúsculas**. Após o código, há um espaço e o nome do produto.
 
 Exemplos de códigos de produto:
 
@@ -24,7 +24,7 @@ A análise requer a extração do **nome do produto** e das partes relevantes do
 
 ### 3 - Teste de variações
 
-Os produtos da região P e R possuem alguns códigos com variações. No final do código do produto da região P, pode haver o tipo `RGX` ou `MTCH` e, na região R, pode haver o tipo `RPLC` ou `FIND`. O participante deseja fazer uma análise específica para esses códigos diferentes e deve criar uma regex para cada uma das duas regiões, testando as variações no mesmo arquivo de teste, sem apagar o teste da regex anterior.
+Os produtos da região P e R possuem alguns códigos com variações. No final do código do produto da região P, pode haver o tipo `RGX` ou `MTCH` e, na região R, pode haver o tipo `RPLC` ou `FIND`. O participante deseja fazer uma análise específica para esses códigos diferentes e deve criar uma regex para cada uma das duas regiões, testando as variações no mesmo arquivo de teste, sem apagar o teste da regex anterior. Considere que a regex deve extrair o **tipo do produto** e o **nome do produto**.
 
 Exemplos de códigos de produto com variação:
 
