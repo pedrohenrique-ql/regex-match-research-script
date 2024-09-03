@@ -44,3 +44,8 @@ Em [xptoProductCode](./src/xptoProductCode.js), há uma expressão regular que f
 - A parte **alfabética** do código deve conter apenas letras **vogais**.
 
 No entanto, a regex atual não está capturando todos os códigos de produto desejados corretamente. O participante deve usar a funcionalidade de code lens da extensão para testar a regex no arquivo de teste e corrigi-la para capturar todos os produtos desejados.
+
+## Documentação Auxiliar
+
+[Regex Match - Documentação](https://github.com/pedrohenrique-ql/vscode-regex-match/blob/canary/README.md)
+[Regex - Documentação](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions)
