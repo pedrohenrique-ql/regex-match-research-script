@@ -24,7 +24,7 @@ A análise requer a extração das partes relevantes dos códigos: a **região**
 
 ### 3 - Teste de variações
 
-Os produtos da região P e R possuem alguns códigos com variações. No final do código do produto da região P, pode haver o tipo `RGX` ou `MTCH` e, na região R, pode haver o tipo `RPLC` ou `FIND`. O participante deseja fazer uma análise específica para esses códigos diferentes e deve criar uma regex para cada uma das duas regiões. Use a funcionalidade de múltiplas regexes da extensão para criar e testar as variações no mesmo arquivo de teste, sem apagar o teste da regex anterior. Considere que a regex deve extrair o **tipo do produto**.
+Os produtos da região P e R possuem alguns códigos com variações. No final do código do produto da região P, pode haver o tipo `RGX` ou `MTCH` e, na região R, pode haver o tipo `RPLC` ou `FIND`. O participante deseja fazer uma análise específica para esses códigos diferentes e deve criar uma regex para cada uma das duas regiões, sem apagar o teste da regex anterior. Considere que a regex deve extrair o **tipo do produto**.
 
 Exemplos de códigos de produto com variação:
 
