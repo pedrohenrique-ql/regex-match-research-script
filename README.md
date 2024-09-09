@@ -8,7 +8,7 @@ O participante lida com um sistema de rastreamento de produtos que usa códigos 
 
 ### 1 - Criação de uma regex
 
-O participante deve criar uma regex para detectar todos os **códigos dos produtos** usando o arquivo de teste da extensão. O padrão é formado pela **região** (P, Q ou R), seguida de um **hífen**, seguida da **identificação** do produto, que é composta por **3 números**, um **divisor** (hífen, barra ou ponto), e **3 letras maiúsculas**.
+Você deve criar uma regex para detectar todos os **códigos dos produtos** usando o arquivo de teste da extensão. O padrão é formado pela **região** (P, Q ou R), seguida de um **hífen**, seguida da **identificação** do produto, que é composta por **3 números**, um **divisor** (hífen, barra ou ponto), e **3 letras maiúsculas**.
 
 Exemplos de códigos de produto:
 
@@ -20,11 +20,11 @@ R-789.GHI
 
 ### 2 - Captura de partes relevantes
 
-A análise requer a extração das partes relevantes dos códigos: a **região** e a **identificação**. O participante deve adicionar grupos de captura na regex criada anteriormente e verificar se a extensão consegue capturar essas partes corretamente.
+A análise requer a extração das partes relevantes dos códigos: a **região** e a **identificação**. Você deve adicionar grupos de captura na regex criada anteriormente e verificar se a extensão consegue capturar essas partes corretamente.
 
 ### 3 - Teste de variações
 
-Os produtos da região P e R possuem alguns códigos com variações. No final do código do produto da região P, pode haver o tipo `RGX` ou `MTCH` e, na região R, pode haver o tipo `RPLC` ou `FIND`. O participante deseja fazer uma análise específica para esses códigos diferentes e deve criar uma regex para cada uma das duas regiões, sem apagar o teste da regex anterior. Considere que a regex deve extrair o **tipo do produto**.
+Os produtos da região P e R possuem alguns códigos com variações que não estão no arquivo recebido. No final do código do produto da região P, pode haver o tipo `RGX` ou `MTCH` e, na região R, pode haver o tipo `RPLC` ou `FIND`. Você deseja fazer uma análise específica para esses códigos diferentes e deve criar uma regex para cada uma das duas regiões, sem apagar o teste da regex anterior. Considere que a regex deve extrair o **tipo do produto**.
 
 Exemplos de códigos de produto com variação:
 
@@ -43,7 +43,7 @@ Em [xptoProductCode](./src/xptoProductCode.js), há uma expressão regular que f
 - A parte **numérica** do código deve começar com um número **par** e terminar com um número **ímpar**.
 - A parte **alfabética** do código deve conter apenas letras **vogais**.
 
-No entanto, a regex atual não está capturando todos os códigos de produto desejados corretamente. O participante deve usar a funcionalidade de code lens da extensão para testar a regex no arquivo de teste e corrigi-la para capturar todos os produtos desejados.
+No entanto, a regex atual não está capturando todos os códigos de produto desejados corretamente. Você deve usar a funcionalidade de code lens da extensão para testar a regex no arquivo de teste e corrigi-la para capturar todos os produtos desejados.
 
 ## Documentação Auxiliar
 
