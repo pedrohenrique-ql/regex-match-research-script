@@ -47,5 +47,5 @@ No entanto, a regex atual não está capturando todos os códigos de produto des
 
 ## Documentação Auxiliar
 
-[Regex Match - Documentação](https://github.com/pedrohenrique-ql/vscode-regex-match/blob/canary/README.md)
-[Regex - Documentação](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions)
+- [Regex Match - Documentação](https://github.com/pedrohenrique-ql/vscode-regex-match/blob/canary/README.md)
+- [Regex - Documentação](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Regular_Expressions)
